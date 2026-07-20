@@ -1,0 +1,17 @@
+PA Method,Metric,Mean,SD,N
+Random,AUC-ROC,0.8145,0.1576,180
+Random,PR-AUC,0.2276,0.2132,180
+Random,TSS,0.3508,0.2874,180
+Random,BRIER,0.259,0.199,180
+Spatial Constrained,AUC-ROC,0.8114,0.1435,180
+Spatial Constrained,PR-AUC,0.2342,0.2305,180
+Spatial Constrained,TSS,0.3384,0.3064,180
+Spatial Constrained,BRIER,0.2188,0.1838,180
+Two Step,AUC-ROC,0.8298,0.1674,180
+Two Step,PR-AUC,0.2337,0.2047,180
+Two Step,TSS,0.3627,0.2874,180
+Two Step,BRIER,0.3557,0.2253,180
+Uncertainty Zone,AUC-ROC,0.7546,0.2035,180
+Uncertainty Zone,PR-AUC,0.2594,0.29,180
+Uncertainty Zone,TSS,0.2879,0.3256,180
+Uncertainty Zone,BRIER,0.1679,0.1574,180

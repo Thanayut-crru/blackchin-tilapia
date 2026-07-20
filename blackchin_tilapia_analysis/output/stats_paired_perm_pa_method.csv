@@ -1,0 +1,7 @@
+factor,level_a,level_b,mean_a,mean_b,diff_a_b,n_pairs,p_paired_perm,response,p_holm,sig
+pa_method,random,spatial_constrained,0.8425,0.8139,0.0286,180,0.006,auc_roc,0.036,*
+pa_method,random,two_step,0.8425,0.8232,0.0193,180,0.022,auc_roc,0.11,ns
+pa_method,random,uncertainty_zone,0.8425,0.832,0.0105,180,0.499,auc_roc,1.0,ns
+pa_method,spatial_constrained,two_step,0.8139,0.8232,-0.0093,180,0.483,auc_roc,1.0,ns
+pa_method,spatial_constrained,uncertainty_zone,0.8139,0.832,-0.0181,180,0.2156,auc_roc,0.8624,ns
+pa_method,two_step,uncertainty_zone,0.8232,0.832,-0.0088,180,0.6427,auc_roc,1.0,ns

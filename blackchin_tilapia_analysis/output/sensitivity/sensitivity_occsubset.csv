@@ -1,0 +1,3 @@
+sensitivity_factor,value,n_folds,auc_mean,auc_sd,prauc_mean,prauc_sd,brier_mean,n_occ
+occ_subset,full,9,0.9022,0.0987,0.534,0.2769,0.0663,22
+occ_subset,gbif_inat_only,9,0.8845,0.1155,0.4756,0.2067,0.061,20

@@ -1,0 +1,4 @@
+sensitivity_factor,value,n_folds,auc_mean,auc_sd,prauc_mean,prauc_sd,brier_mean
+thinning_km,5,9,0.9182,0.0819,0.5619,0.2528,0.0658
+thinning_km,10,9,0.9022,0.0987,0.534,0.2769,0.0663
+thinning_km,20,9,0.8779,0.1079,0.4505,0.2652,0.0591

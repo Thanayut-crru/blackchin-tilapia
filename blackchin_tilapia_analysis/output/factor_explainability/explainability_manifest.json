@@ -1,0 +1,17 @@
+{
+  "best_configuration": {
+    "algorithm": "RF",
+    "feature_set": "M_SAP",
+    "pseudo_absence_method": "uncertainty_zone",
+    "pooled_oof_auc": 0.852,
+    "auc_ci_95": [
+      0.7803,
+      0.9091
+    ]
+  },
+  "occurrences": 38,
+  "fold_models": 15,
+  "permutation_repeats": 30,
+  "bootstrap_repeats": 2000,
+  "interpretation": "Permutation importance was computed only on held-out outer-fold data. SHAP and ALE summarize fitted associations and do not establish causality."
+}

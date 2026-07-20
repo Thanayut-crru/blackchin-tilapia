@@ -1,0 +1,10 @@
+Response,Factor,Test,Statistic,p-value,Note
+AUC-ROC,algo,Kruskal-Wallis,H=2.53,0.2829,non-independent rows; see blocked-perm for inference
+AUC-ROC,feat_set,Kruskal-Wallis,H=39.31,0.0,non-independent rows; see blocked-perm for inference
+AUC-ROC,pa_method,Kruskal-Wallis,H=14.13,0.0027,non-independent rows; see blocked-perm for inference
+PR-AUC,algo,Kruskal-Wallis,H=0.01,0.9949,non-independent rows; see blocked-perm for inference
+PR-AUC,feat_set,Kruskal-Wallis,H=17.87,0.0005,non-independent rows; see blocked-perm for inference
+PR-AUC,pa_method,Kruskal-Wallis,H=1.97,0.5788,non-independent rows; see blocked-perm for inference
+TSS,algo,Kruskal-Wallis,H=14.37,0.0008,non-independent rows; see blocked-perm for inference
+TSS,feat_set,Kruskal-Wallis,H=48.55,0.0,non-independent rows; see blocked-perm for inference
+TSS,pa_method,Kruskal-Wallis,H=6.98,0.0725,non-independent rows; see blocked-perm for inference

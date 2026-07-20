@@ -1,0 +1,4 @@
+factor,level_a,level_b,mean_a,mean_b,diff_a_b,n_pairs,p_paired_perm,response,p_holm,sig
+algo,MXN,RF,0.7633,0.8708,-0.1075,240,0.002,auc_roc,0.006,**
+algo,MXN,XGB,0.7633,0.8496,-0.0863,240,0.002,auc_roc,0.006,**
+algo,RF,XGB,0.8708,0.8496,0.0213,240,0.002,auc_roc,0.006,**

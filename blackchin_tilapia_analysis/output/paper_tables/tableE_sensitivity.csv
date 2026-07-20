@@ -1,0 +1,9 @@
+Sensitivity Factor,Level,N Folds,AUC Mean,AUC SD,PR-AUC Mean,N Occurrences
+thinning km,5,9,0.918,0.031,0.294,
+thinning km,10,9,0.853,0.089,0.258,
+thinning km,20,9,0.791,0.073,0.210,
+occ subset,full,9,0.853,0.089,0.258,22.0
+occ subset,gbif_inat_only,9,0.859,0.069,0.318,20.0
+n folds,2,6,0.840,0.050,0.269,
+n folds,3,9,0.867,0.051,0.347,
+n folds,4,12,0.889,0.056,0.291,

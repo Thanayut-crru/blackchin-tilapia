@@ -1,0 +1,13 @@
+Algorithm,Feature Set,Best PA Method,AUC-ROC (95% CI),PR-AUC,TSS,Brier
+MXN,M_S,spatial_constrained,0.788 [0.673–0.880],0.081,0.507,0.207
+MXN,M_SA,spatial_constrained,0.814 [0.684–0.918],0.081,0.594,0.204
+MXN,M_SAP,spatial_constrained,0.855 [0.772–0.919],0.211,0.577,0.226
+MXN,M_SP,spatial_constrained,0.879 [0.814–0.927],0.271,0.545,0.183
+RF,M_S,two_step,0.806 [0.719–0.885],0.111,0.524,0.323
+RF,M_SA,two_step,0.851 [0.769–0.910],0.166,0.468,0.308
+RF,M_SAP,two_step,0.855 [0.788–0.914],0.150,0.553,0.226
+RF,M_SP,two_step,0.822 [0.718–0.913],0.128,0.522,0.281
+XGB,M_S,two_step,0.821 [0.738–0.888],0.163,0.422,0.381
+XGB,M_SA,two_step,0.863 [0.798–0.917],0.237,0.501,0.342
+XGB,M_SAP,two_step,0.880 [0.829–0.923],0.196,0.611,0.266
+XGB,M_SP,two_step,0.862 [0.799–0.914],0.175,0.578,0.307

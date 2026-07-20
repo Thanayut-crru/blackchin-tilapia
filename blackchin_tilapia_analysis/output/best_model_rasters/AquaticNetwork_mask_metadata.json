@@ -1,0 +1,7 @@
+{
+  "water_polygon_source": "D:\\\u0e27\u0e34\u0e08\u0e31\u0e22\\2569\u0e1b\u0e25\u0e32\u0e2b\u0e21\u0e2d\u0e04\u0e32\u0e07\u0e14\u0e33\\data\\osm\\thailand_shp\\gis_osm_water_a_free_1.shp",
+  "waterway_source": "D:\\\u0e27\u0e34\u0e08\u0e31\u0e22\\2569\u0e1b\u0e25\u0e32\u0e2b\u0e21\u0e2d\u0e04\u0e32\u0e07\u0e14\u0e33\\data\\osm\\thailand_shp\\gis_osm_waterways_free_1.shp",
+  "waterway_buffer_m": 500,
+  "rasterization": "all_touched=True",
+  "interpretation": "Recommended ecological display mask. Values remain relative habitat suitability, not calibrated invasion probability."
+}

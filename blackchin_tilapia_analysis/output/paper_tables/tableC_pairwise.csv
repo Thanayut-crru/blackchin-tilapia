@@ -1,0 +1,16 @@
+factor,level_a,level_b,mean_a,mean_b,diff_a_b,n_pairs,p_paired_perm,response,p_holm,sig
+algo,MXN,RF,0.783,0.8171,-0.0341,240,0.014,auc_roc,0.042,*
+algo,MXN,XGB,0.783,0.8076,-0.0246,240,0.11,auc_roc,0.22,ns
+algo,RF,XGB,0.8171,0.8076,0.0095,240,0.282,auc_roc,0.282,ns
+feat_set,M_S,M_SA,0.733,0.785,-0.052,180,0.0,auc_roc,0.0,**
+feat_set,M_S,M_SAP,0.733,0.831,-0.098,180,0.0,auc_roc,0.0,**
+feat_set,M_S,M_SP,0.733,0.8614,-0.1284,180,0.0,auc_roc,0.0,**
+feat_set,M_SA,M_SAP,0.785,0.831,-0.046,180,0.0,auc_roc,0.0,**
+feat_set,M_SA,M_SP,0.785,0.8614,-0.0764,180,0.0,auc_roc,0.0,**
+feat_set,M_SAP,M_SP,0.831,0.8614,-0.0304,180,0.0,auc_roc,0.0,**
+pa_method,random,spatial_constrained,0.8145,0.8114,0.0031,180,0.81,auc_roc,0.81,ns
+pa_method,random,two_step,0.8145,0.8298,-0.0153,180,0.158,auc_roc,0.474,ns
+pa_method,random,uncertainty_zone,0.8145,0.7546,0.0599,180,0.0,auc_roc,0.0,**
+pa_method,spatial_constrained,two_step,0.8114,0.8298,-0.0185,180,0.2,auc_roc,0.474,ns
+pa_method,spatial_constrained,uncertainty_zone,0.8114,0.7546,0.0568,180,0.0,auc_roc,0.0,**
+pa_method,two_step,uncertainty_zone,0.8298,0.7546,0.0752,180,0.0,auc_roc,0.0,**

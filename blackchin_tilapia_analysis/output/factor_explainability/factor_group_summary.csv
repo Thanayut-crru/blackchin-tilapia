@@ -1,0 +1,4 @@
+group,permutation_auc_decrease,mean_abs_shap,mean_selection_frequency
+A: waterway accessibility,0.010526371762249662,0.024469033861312463,0.8666666666666667
+P: human-pressure proxy,0.03237642069550475,0.05837545442155668,0.65
+S: environmental suitability,0.13876512703616722,0.265509409847459,0.5333333333333333

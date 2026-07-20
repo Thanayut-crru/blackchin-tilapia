@@ -1,0 +1,4 @@
+factor,kruskal_H,p_value,response,note
+algo,18.0721,0.0001,auc_roc,non-independent rows; see blocked-perm for inference
+feat_set,9.1341,0.0276,auc_roc,non-independent rows; see blocked-perm for inference
+pa_method,1.916,0.59,auc_roc,non-independent rows; see blocked-perm for inference

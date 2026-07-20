@@ -1,0 +1,7 @@
+factor,level_a,level_b,mean_a,mean_b,diff_a_b,n_pairs,p_paired_perm,response,p_holm,sig
+feat_set,M_S,M_SA,0.7915,0.8265,-0.035,180,0.002,auc_roc,0.012,*
+feat_set,M_S,M_SAP,0.7915,0.8457,-0.0542,180,0.002,auc_roc,0.012,*
+feat_set,M_S,M_SP,0.7915,0.8479,-0.0564,180,0.002,auc_roc,0.012,*
+feat_set,M_SA,M_SAP,0.8265,0.8457,-0.0192,180,0.0619,auc_roc,0.1238,ns
+feat_set,M_SA,M_SP,0.8265,0.8479,-0.0214,180,0.014,auc_roc,0.042,*
+feat_set,M_SAP,M_SP,0.8457,0.8479,-0.0022,180,0.7585,auc_roc,0.7585,ns

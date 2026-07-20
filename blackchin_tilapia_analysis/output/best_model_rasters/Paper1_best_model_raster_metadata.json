@@ -1,0 +1,426 @@
+{
+  "configuration": {
+    "algorithm": "RF",
+    "feature_set": "M_SAP",
+    "pseudo_absence_method": "uncertainty_zone",
+    "pooled_oof_auc": 0.852,
+    "pooled_oof_auc_ci_95": [
+      0.7803,
+      0.9091
+    ]
+  },
+  "occurrence_count": 38,
+  "year_cutoff": 2024,
+  "ensemble_members": 15,
+  "binary_threshold": 0.3808,
+  "threshold_source": "median of 15 inner-OOF Youden thresholds",
+  "prediction_domains": {
+    "recommended": "common valid aquatic cells within Thailand boundary",
+    "full_country_context": "all predictor-complete cells within Thailand; terrestrial predictions are extrapolations and are not directly interpretable as fish habitat"
+  },
+  "crs": "EPSG:4326",
+  "nodata_float": -9999.0,
+  "nodata_binary": 255,
+  "models": [
+    {
+      "rep": 1,
+      "fold": 1,
+      "outer_auc": 0.904423076923077,
+      "features": [
+        "bio04",
+        "bio10",
+        "bio15",
+        "bio17",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density",
+        "P4_dist_urban"
+      ],
+      "hyperparameters": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": 0.5,
+        "max_depth": 10
+      },
+      "pa_ratio": "1:10",
+      "n_pseudo_absence": 380,
+      "inner_oof_threshold": 0.1369,
+      "seed": 1059
+    },
+    {
+      "rep": 1,
+      "fold": 2,
+      "outer_auc": 0.8997115384615385,
+      "features": [
+        "bio07",
+        "bio10",
+        "bio12",
+        "bio15",
+        "bio17",
+        "elevation",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density",
+        "P4_dist_urban"
+      ],
+      "hyperparameters": {
+        "n_estimators": 200,
+        "min_samples_leaf": 5,
+        "max_features": 0.5,
+        "max_depth": null
+      },
+      "pa_ratio": "1:5",
+      "n_pseudo_absence": 190,
+      "inner_oof_threshold": 0.3808,
+      "seed": 1076
+    },
+    {
+      "rep": 1,
+      "fold": 3,
+      "outer_auc": 0.9835416666666666,
+      "features": [
+        "bio04",
+        "bio07",
+        "bio11",
+        "bio12",
+        "bio15",
+        "bio17",
+        "elevation",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density",
+        "P4_dist_urban"
+      ],
+      "hyperparameters": {
+        "n_estimators": 200,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt",
+        "max_depth": 5
+      },
+      "pa_ratio": "1:5",
+      "n_pseudo_absence": 190,
+      "inner_oof_threshold": 0.3837,
+      "seed": 1093
+    },
+    {
+      "rep": 2,
+      "fold": 1,
+      "outer_auc": 0.9130769230769232,
+      "features": [
+        "bio04",
+        "bio10",
+        "bio15",
+        "bio16",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density",
+        "P4_dist_urban"
+      ],
+      "hyperparameters": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt",
+        "max_depth": 10
+      },
+      "pa_ratio": "1:3",
+      "n_pseudo_absence": 114,
+      "inner_oof_threshold": 0.3632,
+      "seed": 2059
+    },
+    {
+      "rep": 2,
+      "fold": 2,
+      "outer_auc": 0.9779807692307692,
+      "features": [
+        "bio04",
+        "bio10",
+        "bio12",
+        "bio15",
+        "bio17",
+        "elevation",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density"
+      ],
+      "hyperparameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 10,
+        "max_features": "sqrt",
+        "max_depth": 20
+      },
+      "pa_ratio": "1:10",
+      "n_pseudo_absence": 380,
+      "inner_oof_threshold": 0.2516,
+      "seed": 2076
+    },
+    {
+      "rep": 2,
+      "fold": 3,
+      "outer_auc": 0.8616666666666667,
+      "features": [
+        "bio07",
+        "bio10",
+        "bio12",
+        "bio15",
+        "bio17",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density",
+        "P4_dist_urban"
+      ],
+      "hyperparameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "max_depth": 10
+      },
+      "pa_ratio": "1:5",
+      "n_pseudo_absence": 190,
+      "inner_oof_threshold": 0.46,
+      "seed": 2093
+    },
+    {
+      "rep": 3,
+      "fold": 1,
+      "outer_auc": 0.8316346153846155,
+      "features": [
+        "bio04",
+        "bio10",
+        "bio15",
+        "bio16",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density",
+        "P4_dist_urban"
+      ],
+      "hyperparameters": {
+        "n_estimators": 200,
+        "min_samples_leaf": 5,
+        "max_features": 0.7,
+        "max_depth": 10
+      },
+      "pa_ratio": "1:5",
+      "n_pseudo_absence": 190,
+      "inner_oof_threshold": 0.8934,
+      "seed": 3059
+    },
+    {
+      "rep": 3,
+      "fold": 2,
+      "outer_auc": 0.9370192307692308,
+      "features": [
+        "bio07",
+        "bio10",
+        "bio12",
+        "bio15",
+        "bio17",
+        "elevation",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density"
+      ],
+      "hyperparameters": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt",
+        "max_depth": 20
+      },
+      "pa_ratio": "1:1",
+      "n_pseudo_absence": 38,
+      "inner_oof_threshold": 0.5116,
+      "seed": 3076
+    },
+    {
+      "rep": 3,
+      "fold": 3,
+      "outer_auc": 0.8212499999999999,
+      "features": [
+        "bio07",
+        "bio10",
+        "bio12",
+        "bio15",
+        "bio17",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density"
+      ],
+      "hyperparameters": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": null
+      },
+      "pa_ratio": "1:3",
+      "n_pseudo_absence": 114,
+      "inner_oof_threshold": 0.5011,
+      "seed": 3093
+    },
+    {
+      "rep": 4,
+      "fold": 1,
+      "outer_auc": 0.8175,
+      "features": [
+        "bio07",
+        "bio10",
+        "bio15",
+        "bio17",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density",
+        "P4_dist_urban"
+      ],
+      "hyperparameters": {
+        "n_estimators": 200,
+        "min_samples_leaf": 10,
+        "max_features": 0.7,
+        "max_depth": 5
+      },
+      "pa_ratio": "1:10",
+      "n_pseudo_absence": 380,
+      "inner_oof_threshold": 0.0913,
+      "seed": 4059
+    },
+    {
+      "rep": 4,
+      "fold": 2,
+      "outer_auc": 0.6996153846153846,
+      "features": [
+        "bio04",
+        "bio10",
+        "bio12",
+        "bio15",
+        "bio17",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density",
+        "P4_dist_urban"
+      ],
+      "hyperparameters": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt",
+        "max_depth": 10
+      },
+      "pa_ratio": "1:10",
+      "n_pseudo_absence": 380,
+      "inner_oof_threshold": 0.319,
+      "seed": 4076
+    },
+    {
+      "rep": 4,
+      "fold": 3,
+      "outer_auc": 0.9975,
+      "features": [
+        "bio04",
+        "bio07",
+        "bio11",
+        "bio12",
+        "bio15",
+        "bio17",
+        "elevation",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density"
+      ],
+      "hyperparameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "max_depth": 20
+      },
+      "pa_ratio": "1:3",
+      "n_pseudo_absence": 114,
+      "inner_oof_threshold": 0.38,
+      "seed": 4093
+    },
+    {
+      "rep": 5,
+      "fold": 1,
+      "outer_auc": 0.8439423076923078,
+      "features": [
+        "bio04",
+        "bio07",
+        "bio10",
+        "bio15",
+        "bio17",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density",
+        "P4_dist_urban"
+      ],
+      "hyperparameters": {
+        "n_estimators": 200,
+        "min_samples_leaf": 5,
+        "max_features": 0.5,
+        "max_depth": 20
+      },
+      "pa_ratio": "1:10",
+      "n_pseudo_absence": 380,
+      "inner_oof_threshold": 0.1359,
+      "seed": 5059
+    },
+    {
+      "rep": 5,
+      "fold": 2,
+      "outer_auc": 0.8405754550792719,
+      "features": [
+        "bio07",
+        "bio10",
+        "bio12",
+        "bio15",
+        "bio17",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density"
+      ],
+      "hyperparameters": {
+        "n_estimators": 200,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt",
+        "max_depth": 5
+      },
+      "pa_ratio": "1:3",
+      "n_pseudo_absence": 114,
+      "inner_oof_threshold": 0.5216,
+      "seed": 5076
+    },
+    {
+      "rep": 5,
+      "fold": 3,
+      "outer_auc": 0.994375,
+      "features": [
+        "bio04",
+        "bio07",
+        "bio11",
+        "bio12",
+        "bio15",
+        "bio17",
+        "elevation",
+        "A1_dist_waterway",
+        "A2_waterway_order",
+        "P1_pop_density",
+        "P3_road_density"
+      ],
+      "hyperparameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "max_depth": 5
+      },
+      "pa_ratio": "1:1",
+      "n_pseudo_absence": 38,
+      "inner_oof_threshold": 0.5783,
+      "seed": 5093
+    }
+  ]
+}
