@@ -1,0 +1,11 @@
+step,n_before,n_after,removed,note
+0_raw_merged,1610,1610,0,all sources combined
+1_target_species,1610,1610,0,"keep ['Sarotherodon melanotheron', 'Tilapia melanotheron', 'Chromis melanotheron']"
+2_valid_coords,1610,1610,0,drop NaN / out-of-range coords
+3_thailand_bbox,1610,158,1452,"bbox {'xmin': 97.3, 'xmax': 105.7, 'ymin': 5.5, 'ymax': 20.6}"
+4_coord_uncertainty,158,150,8,drop uncertainty > 5000 m
+5_exact_duplicates,150,149,1,same lat/lon
+6_near_duplicates_11m,149,147,2,round to 0.0001deg
+7_centroid_traps,147,146,1,known centroid coords removed
+8_year_filter,146,146,0,year 1980–2026 required
+9_raster_cell_dedup_2.5arcmin,146,70,76,one record per 2.5-arcmin cell
