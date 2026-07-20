@@ -13,8 +13,7 @@ authors:
     given-names: "Thanayut"
     affiliation: "Faculty of Science and Technology, Chiang Rai Rajabhat University, Chiang Rai 57100, Thailand"
     email: "thanayut.cha@crru.ac.th"
-repository-code: "REPLACE BEFORE UPLOAD WITH GITHUB URL"
-doi: "REPLACE BEFORE UPLOAD WITH ZENODO DOI"
+repository-code: "https://github.com/Thanayut-crru/blackchin-tilapia-geomatics"
 license: MIT
 keywords:
   - species distribution modelling
