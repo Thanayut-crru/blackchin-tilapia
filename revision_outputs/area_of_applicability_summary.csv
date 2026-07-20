@@ -1,0 +1,2 @@
+common_prediction_cells,fraction_cells_supported_by_all_15_models,fraction_cells_supported_by_at_least_12_models,fraction_cells_supported_by_fewer_than_8_models,method
+6052,0.02395902181097158,0.09368803701255783,0.5156972901520158,Per-fold standardized nearest-neighbour dissimilarity; AOA threshold is the 95th percentile of second-neighbour distances within each fold-specific training set. Summary and rasters are clipped to the Thailand national boundary.

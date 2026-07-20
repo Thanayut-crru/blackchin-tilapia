@@ -1,0 +1,4 @@
+source_group,source,n_records,first_year,last_year,median_uncertainty_m
+Citizen science,GBIF,27,2019.0,2024.0,58.0
+Citizen science,iNaturalist,9,2022.0,2024.0,136.0
+Literature,Literature,2,2024.0,2024.0,2000.0
