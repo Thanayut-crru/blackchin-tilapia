@@ -1,0 +1,15 @@
+# Changelog
+
+## 1.1.0 - 2026-07-17
+
+- Aligned the archive with the current unpublished article analysis.
+- Added the exact 38-row modelling occurrence input.
+- Added model-ready OSM/WorldPop-derived inputs with explicit licence mapping.
+- Added direct WorldClim download/cropping because redistribution is prohibited.
+- Added the population-density observation-process diagnostic and corrected Figure 4 assets.
+- Added numerical, checksum, input, and pre-upload verification scripts.
+- Added an output-provenance map and transparent reproducibility checks.
+
+## 1.0.0 - 2026-07-16
+
+- Initial code/results archive.

@@ -1,0 +1,15 @@
+# Required before publishing the Zenodo record
+
+- [ ] Confirm that Rattana Prommai and Thanayut Changruenngam are in the correct author order.
+- [ ] Add ORCIDs for Rattana Prommai and Thanayut Changruenngam if available.
+- [ ] Create/publish the public Git repository and insert its release URL.
+- [ ] Create the Zenodo draft, reserve a DOI, and insert that DOI in the manuscript and metadata.
+- [ ] Add the exact GBIF download DOI and dataset-level licence/citation statement.
+- [ ] Confirm redistribution permission for the two non-GBIF literature records.
+- [ ] Confirm the intended manuscript/figure licence.
+- [ ] Run `python verify_release.py` and keep a passing log.
+- [ ] Run `python pre_upload_check.py`; it must exit successfully.
+- [ ] Upload the versioned ZIP and its `.sha256` file, not the mutable build folder alone.
+
+Do not click **Publish** while any creator, repository, DOI, or occurrence-data
+licence field remains unresolved.

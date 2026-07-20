@@ -1,0 +1,54 @@
+# Third-party data and redistribution status
+
+This archive separates code licensing from data licensing.
+
+## WorldClim 2.1
+
+The ten environmental rasters are **not included**. WorldClim permits academic
+use but states that redistribution is not allowed without prior permission.
+`prepare_worldclim.py` downloads the original BIO and elevation archives from
+the provider and reconstructs the fixed analysis grid.
+
+- Source: https://www.worldclim.org/data/worldclim21.html
+- Terms: https://www.worldclim.org/about.html
+- Citation: Fick, S.E. & Hijmans, R.J. (2017), International Journal of Climatology 37:4302-4315.
+
+## OpenStreetMap / Geofabrik-derived layers
+
+`A1_dist_waterway.tif`, `A2_waterway_order.tif`, `P2_dist_road.tif`,
+`P3_road_density.tif`, `P4_dist_urban.tif`, and the aquatic display mask were
+derived from OpenStreetMap data obtained through Geofabrik. They are supplied
+with attribution to OpenStreetMap contributors and remain subject to ODbL 1.0.
+The study snapshot date recorded by the manuscript is 12 June 2026.
+
+- Copyright and licence: https://www.openstreetmap.org/copyright
+- ODbL 1.0: https://opendatacommons.org/licenses/odbl/1-0/
+
+## WorldPop
+
+`P1_pop_density.tif` is a model-grid derivative of the Thailand 2020 WorldPop
+UN-adjusted population raster. Attribute WorldPop/University of Southampton and
+retain the source dataset's licence and citation.
+
+- Source: https://www.worldpop.org/
+- Data portal: https://data.worldpop.org/
+
+## GBIF / iNaturalist occurrence records
+
+The modelling table contains stable source identifiers where available. GBIF-
+mediated datasets can carry CC0, CC BY, or CC BY-NC licences at the dataset
+level. Before Zenodo publication, insert the exact GBIF download DOI and licence
+statement in `PRE_UPLOAD_CHECKLIST.txt`, the manuscript, and Zenodo metadata.
+Do not replace source-specific terms with the repository MIT licence.
+
+- GBIF terms: https://www.gbif.org/terms
+
+## GADM
+
+GADM country and province boundaries are not included. If regenerating the AOA
+and province summaries, obtain GADM 4.1 directly and place files at:
+
+- `data/thailand_boundary.geojson`
+- `data/thailand_provinces.geojson`
+
+Review https://gadm.org/license.html before use or redistribution.

@@ -1,0 +1,83 @@
+# Reproducibility guide
+
+## A. Verify the archived analytical record
+
+From the repository root:
+
+```powershell
+python verify_release.py
+```
+
+This checks SHA-256 integrity and verifies the values used in the manuscript:
+the selected pooled metrics, 15-fold range, grouped permutation effects,
+residual Moran's I, area-of-applicability fractions, and population-density
+observation diagnostic.
+
+## B. Reconstruct the WorldClim predictors
+
+Install the pinned packages, then download directly from WorldClim:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python prepare_worldclim.py --download
+python verify_inputs.py
+```
+
+`prepare_worldclim.py` extracts BIO1, BIO4, BIO7, BIO10, BIO11, BIO12, BIO15,
+BIO16, BIO17, and elevation from WorldClim 2.1 at 2.5 arc-minutes and crops the
+fixed 96-106 E, 5-23 N grid used by the analysis. Expected hashes for every
+model-ready input are stored in `metadata/input_data_manifest.csv`.
+
+## C. Run the full nested spatial experiment
+
+```powershell
+python run_reproduction.py --stage full
+```
+
+The command runs the factorial experiment and pooled-metric step in sequence.
+It can require hours and overwrites files in `blackchin_tilapia_analysis/output`; retain a clean
+copy of the release for comparison. Random states are fixed in the source, but
+small floating-point differences can occur across operating systems or library
+builds.
+
+Equivalent direct commands are:
+
+```powershell
+python -m blackchin_tilapia_analysis.scripts.20_full_experiment_v2
+python -m blackchin_tilapia_analysis.scripts.21_pooled_metrics_stats_v2
+```
+
+## D. Reproduce the population-density observation diagnostic
+
+```powershell
+python revision/population_density_observation_diagnostic.py `
+  --project blackchin_tilapia_analysis `
+  --occurrences audit/output_audit/occurrence_merged_lit.csv `
+  --output revision_outputs/population_density_observation_diagnostic_reproduced.csv
+```
+
+## E. Revision diagnostics with external administrative boundaries
+
+`revision/paper1_revision_diagnostics.py` reconstructs selected models and also
+creates national/province products. Those spatial products require GADM 4.1
+country and province layers at the paths listed in `THIRD_PARTY_DATA.txt`.
+GADM files are not redistributed in this archive. After obtaining them:
+
+```powershell
+python revision/paper1_revision_diagnostics.py `
+  --project blackchin_tilapia_analysis `
+  --output revision_outputs_reproduced
+```
+
+## Directory-to-manuscript map
+
+- `blackchin_tilapia_analysis/output/experiment_oof_predictions.csv`: repeated held-out scores
+- `blackchin_tilapia_analysis/output/pooled_best_per_model.csv`: pooled performance and intervals
+- `revision_outputs/selected_performance_context.csv`: fold instability and random PR baseline
+- `revision_outputs/partition_level_feature_contrasts.csv`: Table 4 contrasts
+- `revision_outputs/grouped_permutation_summary.csv`: Table 5
+- `blackchin_tilapia_analysis/output/factor_explainability/feature_importance_summary.csv`: Table 6 source
+- `revision_outputs/population_density_observation_diagnostic.csv`: Section 3.5 diagnostic
+- `revision_outputs/province_relative_suitability_top15.csv`: province summaries

@@ -1,0 +1,29 @@
+{
+  "title": "Associations of Environmental, Waterway-Context, and Human-Activity Predictors with Blackchin Tilapia Records in Thailand",
+  "description": "Versioned code, model-ready inputs permitted for redistribution, archived out-of-fold predictions, spatial diagnostics, and figures for an exploratory presence-background analysis of blackchin tilapia records in Thailand. The unpublished manuscript is not included. Screening surfaces are not occurrence probabilities or operational risk maps.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Prommai, Rattana",
+      "affiliation": "Department of Data Science and Application, School of Information and Communication Technology, University of Phayao, Phayao 56000, Thailand"
+    },
+    {
+      "name": "Changruenngam, Thanayut",
+      "affiliation": "Faculty of Science and Technology, Chiang Rai Rajabhat University, Chiang Rai 57100, Thailand"
+    }
+  ],
+  "version": "1.1.0",
+  "publication_date": "2026-07-17",
+  "license": "mit-license",
+  "keywords": [
+    "species distribution modelling",
+    "nested spatial cross-validation",
+    "blackchin tilapia",
+    "citizen science",
+    "Thailand",
+    "geomatics"
+  ],
+  "access_right": "open",
+  "related_identifiers": [],
+  "notes": "MIT covers original code only. OSM-derived files remain ODbL; other third-party source terms apply. Confirm creator order and complete the repository, occurrence DOI, and reserved Zenodo DOI fields before publication."
+}

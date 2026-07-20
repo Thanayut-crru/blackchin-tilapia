@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or derived dataset, please cite this release."
+title: "Associations of Environmental, Waterway-Context, and Human-Activity Predictors with Blackchin Tilapia Records in Thailand"
+type: software
+version: "1.1.0"
+date-released: "2026-07-17"
+authors:
+  - family-names: "Prommai"
+    given-names: "Rattana"
+    affiliation: "Department of Data Science and Application, School of Information and Communication Technology, University of Phayao, Phayao 56000, Thailand"
+    email: "rattana.pr@up.ac.th"
+  - family-names: "Changruenngam"
+    given-names: "Thanayut"
+    affiliation: "Faculty of Science and Technology, Chiang Rai Rajabhat University, Chiang Rai 57100, Thailand"
+    email: "thanayut.cha@crru.ac.th"
+repository-code: "REPLACE BEFORE UPLOAD WITH GITHUB URL"
+doi: "REPLACE BEFORE UPLOAD WITH ZENODO DOI"
+license: MIT
+keywords:
+  - species distribution modelling
+  - spatial cross-validation
+  - invasive fish
+  - citizen science
+  - Thailand

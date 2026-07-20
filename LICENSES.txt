@@ -1,0 +1,9 @@
+# Licence map
+
+- Original Python and PowerShell code: MIT (`LICENSE`).
+- Author-created documentation and figures: CC BY 4.0, unless a figure states otherwise.
+- OpenStreetMap-derived data: ODbL 1.0; © OpenStreetMap contributors.
+- WorldPop-derived layer: source dataset terms and attribution continue to apply.
+- GBIF/iNaturalist-derived records: per-source dataset licences continue to apply.
+
+No repository-level licence overrides third-party rights or source attribution.
